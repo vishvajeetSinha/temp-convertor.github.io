@@ -29,8 +29,8 @@ input { height:100px; width:40%;
       }
 
   a
- { display:inline-block; }
-      a:link{ width:200px; padding:30px;
+ { display:block; }
+      a:link,a:active{ width:200px; padding:30px;
            text-align:center;font-size:60px;
            color:blue; background-color:mediumseagreen;
            text-decoration:none;
@@ -51,7 +51,8 @@ input { height:100px; width:40%;
    placeholder=" Enter temprature here" id="in"/>
 
  <a onclick="celcius()"> Submit </a>
-
+<br/> <br/>
+<hr/>
    <script>
    
  vae temp = document.getElementById("in").value;

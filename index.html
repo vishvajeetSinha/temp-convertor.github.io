@@ -45,19 +45,19 @@ input { height:100px; width:40%;
 
 <body>
 <h1> Fahrenheit to celcius convertor </h1>
-<div data-text="Output Screen" id ="display"> </div>
+<div id ="display"> </div>
 <br/> <br/>
   <input name="inputData" 
    placeholder=" Enter temprature here" id="in"/>
 
-  <a onclick="celcius()"> Submit </a>
+ <p> <a onclick="celcius()"> Submit </a> </p>
 
    <script>
    
  let temp = document.getElementById("in").value;
  function celcius ()
  { 
-document.getElementById("display").innerHTML=5/9 * temp-32 +"°"+" C");
+document.getElementById("display").innerHTML=5/9 * temp-32 +"°"+" C";
  }
   </script>
 </body>

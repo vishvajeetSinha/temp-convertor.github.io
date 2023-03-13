@@ -5,24 +5,26 @@
 </title>
 <head>
    <style>
+     body { background-color:gray;}
      h1 { text-align:center;}
      #display
-       { background-color:#fff;
+       { background-color:mediumseagreen;
          border-radius:10px;
          height:200px; width:50%;
          margin-left:25%;
          border-left-color:5px solid green;
          text-align:center;
-         font-size:100px; color:mediumseagreen;
+         font-size:100px; color:white;
        }
 
-input { height:60px; width:50%; 
+input { height:100px; width:40%; 
+        margin-left:20%;
         background-color:dodgerblue;
         color:white;
-        border-radius:5px;
+        border-radius:10px;
       }
 
-button { width:40%; height:60px; }
+button { width:20%; height:100px; }
 
 
    </style>
@@ -35,16 +37,14 @@ button { width:40%; height:60px; }
   <input name="inputData" 
    placeholder="ex.100°F" id="in"/>
 
-  <button onclick="celcius()">click to convert </button>
+  <button type="button" onclick="celcius()">click to convert </button>
 
    <script>
-    document.body.style.backgroundColor=
-    "2225";
    
  let temp = document.getElementById("in").value;
  function celcius ()
  { 
-document.getElementById("display").innerHTML=write(5/9*(temp-32) +"°"+" C");
+document.getElementById("display").innerHTML=document.write(5/9*(temp-32) +"°"+" C");
  }
   </script>
 </body>

@@ -29,15 +29,15 @@ input { height:100px; width:40%;
       }
 
   a:link, a:active, a:visited
- { display:inline-block;}
-           width:20%; padding:50px; 
+ { display:block;}
+           width:20%; height:100px; 
            text-align:center;font-size:50px;
-           color:white; background-color:mediumseagreen;
+           color:white; background-color:lightgreen;
            text-decoration:none;
            border-radius:8px;
-           line-height:100hv;
+           line-height:100px;
          }
-  a:hover { background-color:green; }
+  
 
 
    </style>
@@ -57,7 +57,7 @@ input { height:100px; width:40%;
  let temp = document.getElementById("in").value;
  function celcius ()
  { 
-document.getElementById("display").innerHTML=((temp-32)*5/9 +"°"+" C");
+document.getElementById("display").innerHTML=5/9 * temp-32 +"°"+" C");
  }
   </script>
 </body>

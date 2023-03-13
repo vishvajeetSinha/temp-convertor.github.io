@@ -30,12 +30,12 @@ input { height:100px; width:40%;
 
   a:link, a:visited
  { display:block;
-           width:20%; height:100px; 
-           text-align:center;font-size:50px;
-           color:white; background-color:lightgreen;
+           padding:30px;
+           text-align:center;font-size:30px;
+           color:blue; background-color:white;
            text-decoration:none;
-           border-radius:8px;
-           line-height:100px;
+           border-radius:5px;
+           
          }
   
 
@@ -57,7 +57,7 @@ input { height:100px; width:40%;
  let temp = document.getElementById("in").value;
  function celcius ()
  { 
-document.getElementById("display").innerHTML=5/9 * temp-32 +"°"+" C";
+document.getElementById("display").innerHTML=9/5*(temp-32) +"°"+" C";
  }
   </script>
 </body>

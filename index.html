@@ -6,31 +6,35 @@
 <head>
    <style>
      body { background-color:black;
-            margin-top:40%;
+            margin-top:50%;
           }
      h1 { text-align:center; color:white;}
      #display
        { background-color:white;
          border-radius:10px;
-         height:200px; width:50%;
-         margin-left:25%;
-         border-left-color:20px solid mediumseagreen;
+         height:250px; width:80%;
+         margin-left:15%;
+         border-left-color:50px solid tomato;
          text-align:center;
-         font-size:100px; color:white;
+         font-size:60px; color:black;
        }
 
 input { height:100px; width:40%; 
         margin-left:20%;
-        font-size:50px;
+        font-size:40px;
         text-align:center;
         background-color:dodgerblue;
         color:white;
-        border-radius:10px;
+        border-radius:8px;
       }
 
-    button { width:20%; height:100px; 
-             text-align:center; 
-           }
+  a:link { width:20%; height:100px; 
+           text-align:center;font-size:50px;
+           color:white; background-color:mediumseagreen;
+           text-decoration:none;
+           border-radius:8px;
+         }
+  a:hover { background-color:green; }
 
 
    </style>
@@ -38,12 +42,12 @@ input { height:100px; width:40%;
 
 <body>
 <h1> Fahrenheit to celcius convertor </h1>
-<div id ="display"> </div>
+<div id ="display" placeholder="Display"> </div>
 <br/> <br/>
   <input name="inputData" 
-   placeholder=" For ex. 98.6 " id="in"/>
+   placeholder=" Enter temp here ex. 98.6 " id="in"/>
 
-  <button type="button" onclick="celcius()"> Submit </button>
+  <a onclick="celcius()"> Submit </a>
 
    <script>
    

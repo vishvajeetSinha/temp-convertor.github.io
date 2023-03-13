@@ -28,11 +28,13 @@ input { height:100px; width:40%;
         border-radius:8px;
       }
 
-  a:link { width:20%; height:100px; 
+  a:link { display:inline-block;}
+           width:20%; height:100px; 
            text-align:center;font-size:50px;
            color:white; background-color:mediumseagreen;
            text-decoration:none;
            border-radius:8px;
+           text-height:100hv;
          }
   a:hover { background-color:green; }
 
@@ -42,7 +44,7 @@ input { height:100px; width:40%;
 
 <body>
 <h1> Fahrenheit to celcius convertor </h1>
-<div id ="display" placeholder="Display"> </div>
+<div id ="display" data-text="Display"> </div>
 <br/> <br/>
   <input name="inputData" 
    placeholder=" Enter temp here ex. 98.6 " id="in"/>

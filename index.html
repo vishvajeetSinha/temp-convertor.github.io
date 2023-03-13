@@ -22,12 +22,15 @@
 input { height:100px; width:40%; 
         margin-left:20%;
         font-size:50px;
+        text-align:center;
         background-color:dodgerblue;
         color:white;
         border-radius:10px;
       }
 
-button { width:25%; height:100px; }
+    button { width:20%; height:100px; 
+             text-align:center; 
+           }
 
 
    </style>
@@ -38,16 +41,16 @@ button { width:25%; height:100px; }
 <div id ="display"> </div>
 <br/> <br/>
   <input name="inputData" 
-   placeholder="ex.100°F" id="in"/>
+   placeholder=" For ex. 98.6 " id="in"/>
 
-  <button type="button" onclick="celcius()">click to convert </button>
+  <button type="button" onclick="celcius()"> Submit </button>
 
    <script>
    
  let temp = document.getElementById("in").value;
  function celcius ()
  { 
-document.getElementById("display").innerHTML=(temp-32)*5/9 +"°"+" C;
+document.getElementById("display").innerHTML=((temp-32)*5/9 +"°"+" C");
  }
   </script>
 </body>
